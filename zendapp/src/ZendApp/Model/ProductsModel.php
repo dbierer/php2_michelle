@@ -5,49 +5,49 @@ namespace ZendApp\Model;
 class ProductsModel
 {
   public function __construct(
-    protected int $id = null,
+   
     protected string $sku,
     protected string $title,
     protected string $imageUrl,
     protected string $tags,
     protected string $description,
     protected int $quantity,
-    
-  ) {  }
+    protected int $id = null //Make the default ones last    
+  ) { }
 
-  protected function getId()
+  public function getId()
   {
     return $this->id;
   }
-  protected function getSku()
+  public function getSku()
   {
     return $this->sku;
   }
-  protected function getTitle()
+  public function getTitle()
   {
     return $this->title;
   }
-  protected function price()
+  public function getPrice()
   {
     return $this->price;
   }
-  protected function getImageUrl()
+  public function getImageUrl()
   {
     return $this->umageUrl;
   }
-  protected function getTags()
+  public function getTags()
   {
     return $this->tags;
   }
-  protected function getDescription()
+  public function getDescription()
   {
     return $this->description;
   }
-  protected function getQuantity()
+  public function getQuantity()
   {
     return $this->quantity;
   }
 }
 
 
-$product1 = new ProductsModel('')
+$product1 = new ProductsModel('');
