@@ -14,7 +14,10 @@ class Product
   protected int $quantity;
   protected int $id = null;
 
-  public function __construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id)
+
+  // ! should add in the data types in the constructor --
+  public function __construct(string $sku, string $title, string $imageUrl, 
+  string $tags, string $description, int $quantity, int $id=null)
   {
     $this->sku = $sku;
     $this->title = $title;
@@ -27,7 +30,7 @@ class Product
 
   public function __get($value)
   {
-    return $this->value ?? null;
+    return $this->$value ?? null; //! -- add the $ dollar sign to the right of arrow -> value
   }
 
   public function __toString()

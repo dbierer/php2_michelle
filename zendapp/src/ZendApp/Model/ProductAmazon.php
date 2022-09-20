@@ -15,9 +15,7 @@
       $this->asin = $asin;
     }
 
-    public function __get($value)
-    {
-      return $this->value ?? null;
-    }
- 
+    
+    //inherited will send the title here and dont need ghe get here
+
   }

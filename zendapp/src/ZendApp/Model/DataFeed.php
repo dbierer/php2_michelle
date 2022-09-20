@@ -1,4 +1,6 @@
 <?php
+namespace ZendApp\Model;
+
 class DataFeed
 {
   public const ALLOWEDFIELDS = ['Identifier', 'Title', 'Quantity', 'Price', 'Category', 'Booth category', 'Images', 'Description', 'SKU', 'MPN', 'UPC',  'ItemNo'];

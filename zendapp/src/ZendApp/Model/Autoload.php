@@ -1,4 +1,9 @@
+
 <?php
+
+
+namespace ZendApp\Model;
+
 class AutoLoader
 {
   protected $path = array();
@@ -28,7 +33,4 @@ class AutoLoader
   }
 }
 
-// $autoLoader = new AutoLoader(__DIR__);
-// use A\X\Test;
-// $t = new Test();
-// echo $t->getName();
+// $autoLoader = new AutoLoader(__DIR__); //put in index.php
