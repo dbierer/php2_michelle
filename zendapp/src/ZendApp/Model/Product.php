@@ -4,12 +4,12 @@
 namespace ZendApp\Model;
 
 //* Extensible superclass definition
-class Product
+abstract class Product
 {
   public const error1 = "This is an error";
 
   //* add data types in the constructor --
-  //! where to add the default value when inheriting?? at the end?
+  //! where to add the default value when inheriting
 
   public function __construct(
     protected string $sku,
@@ -19,8 +19,7 @@ class Product
     protected string $description,
     protected int $quantity,
     protected int $id = null
-  ) {
-  }
+  ) {  }
 
   public function __get($value) //!don't have to add this to the subclass
   {

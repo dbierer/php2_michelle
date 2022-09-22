@@ -9,7 +9,7 @@
   {
     protected string $asin;
 
-    public function __construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id, $asin)
+    public function __construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id=null, $asin)
     {
       parent::__construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id);
       $this->asin = $asin;
