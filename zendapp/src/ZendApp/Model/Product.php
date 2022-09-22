@@ -4,7 +4,7 @@
 namespace ZendApp\Model;
 
 //* Extensible superclass definition
-abstract class Product
+abstract class Product implements IProduct
 {
   public const error1 = "This is an error";
 
@@ -23,7 +23,7 @@ abstract class Product
 
   public function __get($value) //!don't have to add this to the subclass
   {
-    return $this->$value ?? null; //* $ dollar sign to the right of arrow 
+    return $this->$value ?? null; //* $dollar sign to the right of arrow 
   }
 
   public function __toString()
