@@ -9,6 +9,7 @@
   {
     protected string $asin;
 
+    //! does the id go there or at the end
     public function __construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id=null, $asin)
     {
       parent::__construct($sku, $title, $imageUrl, $tags, $description, $quantity, $id);
