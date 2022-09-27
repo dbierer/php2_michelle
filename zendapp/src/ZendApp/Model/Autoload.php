@@ -1,7 +1,6 @@
 
 <?php
 
-
 namespace ZendApp\Model;
 
 class AutoLoader
