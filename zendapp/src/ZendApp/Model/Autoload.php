@@ -1,9 +1,7 @@
-
 <?php
-
 namespace ZendApp\Model;
 
-class AutoLoader
+class AutoLoad
 {
   protected $path = array();
   public function __construct($path)
